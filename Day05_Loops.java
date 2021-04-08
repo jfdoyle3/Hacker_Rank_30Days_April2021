@@ -8,22 +8,22 @@ import java.util.regex.*;
 
 public class Solution {
 
- static void multiplicationTable(int number){
-     
-     for (int idx=1; idx<=10; idx++){
-         System.out.println(number+" x "+idx+" = "+number*idx);
-     }
- }
+	static void multiplicationTable(int number) {
 
-    private static final Scanner scanner = new Scanner(System.in);
+		for (int idx = 1; idx <= 10; idx++) {
+			System.out.println(number + " x " + idx + " = " + number * idx);
+		}
+	}
 
-    public static void main(String[] args) {
-        int n = scanner.nextInt();
-        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
-        
-        multiplicationTable(n);
-        
-        scanner.close();
-        
-    }
+	private static final Scanner scanner = new Scanner(System.in);
+
+	public static void main(String[] args) {
+		int n = scanner.nextInt();
+		scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+
+		multiplicationTable(n);
+
+		scanner.close();
+
+	}
 }
