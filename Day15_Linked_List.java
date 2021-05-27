@@ -17,16 +17,13 @@ class Solution {
       if (head == null)
            return new Node(data);
 
-       if (head.next == null)
-       {
+      if (head.next == null)
            head.next = new Node(data);
-       }
-       else
-       {
+      else
            insert(head.next, data);
-       }
+       
 
-       return head;  
+      return head;  
     }
 
 	public static void display(Node head) {

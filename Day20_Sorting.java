@@ -13,9 +13,9 @@ public class Solution {
 		for (int idx = 0; idx < number; idx++) {
 			for (int idx2 = 0; idx2 < number - 1; idx2++) {
 				if (array[idx2] > array[idx2 + 1]) {
-					int tempswap = a[idx2];
+					int tempSwap = a[idx2];
 					array[idx2] = array[idx2 + 1];
-					array[idx2 + 1] = tempswap;
+					array[idx2 + 1] = tempSwap;
 					numSwaps++;
 				}
 			}

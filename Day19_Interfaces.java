@@ -9,14 +9,14 @@ class Calculator implements AdvancedArithmetic {
 
 	public int divisorSum(int number) {
 		int tally = 0;
-		for (int idx = 1; idx <= number; idx++) {
+		for (int idx = 1; idx <= number/2; idx++) {
 			int div = number % idx;
 			if (div == 0) {
 				tally += idx;
 			}
 		}
 
-		return tally;
+		return tally+number;
 	}
 
 }
