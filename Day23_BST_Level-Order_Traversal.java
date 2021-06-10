@@ -21,16 +21,16 @@ class Solution {
 		// Add root Node to Queue
 		queue.add(root);
 		// until the queue is empty
-		while (!queue.isEmpty()) {
-			Node temp = queue.remove();
+		while (!queue.isEmpty()){
+			Node node = queue.remove();
 			// print value
-			System.out.printf("%d ", temp.data);
+			System.out.printf("%d ", node.data);
 			// if left node not null add child node to the queue
-			if (temp.left != null)
-				queue.add(temp.left);
+			if (node.left != null)
+				queue.add(node.left);
 			// if right node not null add child node to the queue
-			if (temp.right != null)
-				queue.add(temp.right);
+			if (node.right != null)
+				queue.add(node.right);
 		}
 	}
 
