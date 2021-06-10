@@ -11,17 +11,24 @@ class Node {
 	}
 }
 
+      
 class Solution {
 
 	static void levelOrder(Node root) {
-		// Write your code here
+		
+		// create a node queue
 		Queue<Node> queue = new LinkedList<>();
+		// Add root Node to Queue
 		queue.add(root);
+		// until the queue is empty
 		while (!queue.isEmpty()) {
 			Node temp = queue.remove();
+			// print value
 			System.out.printf("%d ", temp.data);
+			// if left node not null add child node to the queue
 			if (temp.left != null)
 				queue.add(temp.left);
+			// if right node not null add child node to the queue
 			if (temp.right != null)
 				queue.add(temp.right);
 		}
